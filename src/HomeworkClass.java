@@ -1,13 +1,17 @@
-import java.util.Scanner;
-
+import java.util.*;
 
 public class HomeworkClass {
 
     public static void main(String args[])
     {
+        System.out.println("\n Try Collections:");
+        CollectionsHomework test = new CollectionsHomework();
+        test.tryArrayList();
+
+        System.out.println("\n Creating of an Employee:");
         while (true)
         {
-            homevork();
+            homework();
             System.out.println("The End:");
             Scanner in = new Scanner(System.in);
             String ans = in.nextLine();
@@ -15,7 +19,7 @@ public class HomeworkClass {
         }
     }
 
-    public static Employee homevork()
+    public static Employee homework()
     {
             Scanner in = new Scanner(System.in);
 
@@ -53,9 +57,8 @@ public class HomeworkClass {
     {
         try
         {
-//            What is this Double what I should use
-//            double d = Double.parseDouble(str);
-            Integer.parseInt(str);
+//            Integer.parseInt(str);
+            Double.parseDouble(str);
         }
         catch(NumberFormatException nfe)
         {
